@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 RSpec.describe Specstorm::Srv do
-  it "has a version number" do
-    expect(Specstorm::Srv::VERSION).not_to be nil
-  end
+  describe ".serve" do
+    it "starts serving the app" do
+      expect(described_class::Web).to receive(:run!)
+        .with(port: 1234)
+        .and_return(true)
 
-  it "does something useful" do
-    expect(false).to eq(true)
+      described_class.serve(port: 1234)
+    end
   end
 end
