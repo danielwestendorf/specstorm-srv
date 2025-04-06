@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version = Specstorm::Srv::VERSION
   spec.authors = ["Daniel Westendorf"]
   spec.email = ["daniel@prowestech.com"]
-  
+
   spec.summary = "Parallel rspec runner queue manager pending jobs"
   spec.homepage = "https://github.com/danielwestendorf/specstorm-srv"
   spec.license = "MIT"
