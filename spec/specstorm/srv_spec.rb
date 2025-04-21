@@ -10,4 +10,10 @@ RSpec.describe Specstorm::Srv do
       described_class.serve(port: 1234)
     end
   end
+
+  describe ".seed" do
+    subject { described_class.seed(examples: [{id: 1}, {id: 2}]) }
+
+    it { is_expected.to eq(2) }
+  end
 end

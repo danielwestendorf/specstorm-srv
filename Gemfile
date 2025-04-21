@@ -8,5 +8,6 @@ gemspec
 gem "rake", "~> 13.0"
 
 gem "rspec", "~> 3.0"
+gem "rack-test"
 
 gem "standard", "~> 1.3"
